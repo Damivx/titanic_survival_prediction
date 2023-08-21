@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .fa-search{
+        width: 10px;
+        background-color: red;
+    }
+</style>
+<body>
+    <div id="icon" class="fa-search">show</div>
+    <input type="text" name="" id="inputfield" style="display: none;">
+</body>
+<script>
+    document.getElementById("icon").addEventListener("click", function()
+{
+    var inputfield = document.getElementById("inputfield");
+    if (inputfield.style.display === "none"){
+        inputfield.style.display = "block";
+
+    } else{
+        inputfield.style.display = "none";
+    }
+})
+</script>
+</html>
